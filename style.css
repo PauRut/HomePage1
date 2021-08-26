@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.page {
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
+
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 11%, rgba(155, 186, 231, 1) 84%, rgba(148, 187, 233, 1) 100%);
+}
+
+.sectionHeader {
+    color: white;
+    font-size: 24px;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    padding-top: 40px;
+}
+
+.top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mainHeader {
+    color: pink;
+}
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 16px;
+    background: grey;
+}
+
+.list {
+    list-style: decimal;
+}
+
+.tablica {
+    width: 100%;
+}
+
+.navigation__item {
+    display: inline;
+
+}
+
+.navigation__link {
+    color: #85BAA1;
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+}
+
+.about {
+    max-width: 400px;
+    max-height: 400px;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.about__header {
+    color: #85BAA1;
+}
+
+.about__paragraph {
+    color: darkblue;
+    max-width: 400px;
+}
+
+.about__picture {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
+}
+
+.diary {
+    color: #CA907E;
+}
+
+.diary__calendar {
+    color: #994636;
+}
+
+.diary__list {
+
+    list-style: none;
+}
+
+.diary__header {
+    color: #994636;
+}
+
+
+.table {
+    text-align: center;
+    border: 3px solid violet;
+    width: 100%;
+}
+
+.header__title--red {
+    color: red;
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation__item {
+    display: block;
+    margin: 0 16px;
+
+}
+
+.navigation__link {
+    color: green;
+
+}
+
+@media (min-width: 640px) {
+    .main {
+        max-width: 900px;
+
+    }
+}
+
+@media (max-width: 640px) {
+
+
+    .navigation__list {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navigation__item {
+        margin: 16px;
+    }
+}
